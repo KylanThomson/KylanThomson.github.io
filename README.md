@@ -8,6 +8,7 @@ Please feel free to use this repository for your own portfolio site. Bear in min
 - If you want to host your website via Github you must make a repository **{your_Github_username}.github.io.md**
 - Include index.html in your repository
 - If you like the styling and only want to change the contents of my site to reflect your accomplishments then only modify the index.html file
+- I used [this free online tool](https://favicon.io/favicon-generator/) to create my favicon
 
 ## License
 
