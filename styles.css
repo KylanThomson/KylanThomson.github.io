@@ -81,6 +81,13 @@ h2{
     padding-bottom: 5%;
 }
 
+.h-anchor{
+    margin-bottom: 2%;
+}
+.h-button{
+    width: 60%;
+}
+
 .h-container{
     display: flex;
     flex-direction: column;
