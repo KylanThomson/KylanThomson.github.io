@@ -132,7 +132,21 @@ h2{
     border-radius: 15px;
 }
 
-  .skill-tags{
+.project_gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.project_img{
+    width: 65%;
+    filter: sepia(100%) hue-rotate(171deg) saturate(200%) brightness(90%);
+}
+
+.project_img:hover{
+    filter: none !important;
+}
+
+.skill-tags{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
