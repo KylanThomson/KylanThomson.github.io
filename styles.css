@@ -142,9 +142,9 @@ h2{
     /* filter: sepia(100%) hue-rotate(171deg) saturate(150%) brightness(85%); */
 }
 
-.project_img:hover{
+/* .project_img:hover{
     filter: none !important;
-}
+} */
 
 .skill-tags{
     display: flex;
