@@ -12,8 +12,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    <!-- Credit: https://stackoverflow.com/questions/13975891/change-image-in-html-page-every-few-seconds -->
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "SM_DB_2.jpg";
+        images[1] = "SM_DB_3.jpg";
+        images[2] = "SM_DB_1.jpg";
+    </script>
+
 </head>
-<body>
+<body onload = "startTimer()">
     <div class="container">
 
         <div class="h-container">
@@ -83,7 +106,7 @@
                         <li>Used <span class="skill">Java, JavaFX, MySQL, HTML, CSS, Python</span></li>
                     </ul>
                     <div class="project_gallery">
-                        <img class="project_img" src="SM_Dashboard_1.jpg" alt="Stock Market Dashboard Login Image">
+                        <img id="img" class="project_img" src="SM_DB_1.jpg" alt="Stock Market Dashboard Login Image">
                     </div>
                     <br>
                 </div>
