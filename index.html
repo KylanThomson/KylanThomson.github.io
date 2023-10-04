@@ -33,26 +33,6 @@
         images[0] = "SM_DB_2.jpg";
         images[1] = "SM_DB_3.jpg";
         images[2] = "SM_DB_1.jpg";
-
-        function displayNextImageRR() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("imgRR").src = images[x];
-        }
-
-        function displayPreviousImageRR() {
-            x = (x <= 0) ? images.length - 1 : x - 1;
-            document.getElementById("imgRR").src = images[x];
-        }
-
-        function startTimerRR() {
-            setInterval(displayNextImageRR, 3000);
-        }
-
-        var images = [], x = -1;
-        images[0] = "RR_1.jpg";
-        images[1] = "RR_2.jpg";
-        images[2] = "RR_3.jpg";
-        images[3] = "RR_4.jpg";
     </script>
 
 </head>
@@ -130,7 +110,7 @@
                             <li>Committed to making the job application process more efficient and effective for job seekers everywhere, Resume Revival is more than just a document creator; it's a comprehensive career development tool.</li>
                         </ul>
                         <div class="project_gallery">
-                            <img id="RRimg" class="RRproject_img" src="RR_1.jpg" alt="Stock Market Dashboard Login Image">
+                            <img id="RRimg" class="RRproject_img" src="RR_1.jpg" alt="Resume_Revival">
                         </div>
                         <br>
                         <h3>Investment Dashboard</h3>
