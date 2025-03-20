@@ -4,209 +4,489 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kylan Thomson: Software Dev</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- SEO Meta Tags -->
+    <title>Kylan Thomson | Full Stack Software Engineer & AI Architect</title>
+    <meta name="description" content="Kylan Thomson is a Full Stack Software Engineer with expertise in AI architecture, web development, DevOps, and digital experimentation, building incredible products that harness AI capabilities.">
+    <meta name="keywords" content="Full Stack Developer, Software Engineer, AI Architect, Web Development, DevOps, CI/CD, Digital Experimentation, Cloud Architecture, AI Integration">
+    <meta name="author" content="Kylan Thomson">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kylanthomson.github.io/">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kylanthomson.github.io/">
+    <meta property="og:title" content="Kylan Thomson | Full Stack Software Engineer & AI Architect">
+    <meta property="og:description" content="Full Stack Software Engineer specializing in AI architecture, web development, and cloud solutions to build incredible products that harness AI capabilities.">
+    <meta property="og:image" content="https://kylanthomson.github.io/profile_pic.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kylanthomson.github.io/">
+    <meta name="twitter:title" content="Kylan Thomson | Full Stack Software Engineer & AI Architect">
+    <meta name="twitter:description" content="Full Stack Software Engineer specializing in AI architecture, web development, and cloud solutions to build incredible products that harness AI capabilities.">
+    <meta name="twitter:image" content="https://kylanthomson.github.io/profile_pic.jpg">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#102e4a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Kylan Thomson - Full Stack & AI">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- Credit: https://stackoverflow.com/questions/13975891/change-image-in-html-page-every-few-seconds -->
-    <script type = "text/javascript">
-        function displayNextImage() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("img").src = images[x];
-        }
-
-        function displayPreviousImage() {
-            x = (x <= 0) ? images.length - 1 : x - 1;
-            document.getElementById("img").src = images[x];
-        }
-
-        function startTimer() {
-            setInterval(displayNextImage, 3000);
-        }
-
-        var images = [], x = -1;
-        images[0] = "SM_DB_2.jpg";
-        images[1] = "SM_DB_3.jpg";
-        images[2] = "SM_DB_1.jpg";
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kylan Thomson",
+      "jobTitle": "Full Stack Software Engineer & AI Architect",
+      "url": "https://kylanthomson.github.io/",
+      "image": "https://kylanthomson.github.io/profile_pic.jpg",
+      "sameAs": [
+        "https://github.com/KylanThomson",
+        "https://www.linkedin.com/in/kylanthomson/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Alaska Airlines"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Virginia Commonwealth University"
+      },
+      "knowsAbout": [
+        "Full Stack Development",
+        "AI Architecture",
+        "Web Development",
+        "DevOps",
+        "CI/CD",
+        "Digital Experimentation",
+        "Cloud Architecture",
+        "AI Integration",
+        "User Experience"
+      ]
+    }
     </script>
-
 </head>
-<body onload = "startTimer(); startTimerRR();">
-    <div class="container">
-
-        <div class="h-container">
-            <div class="h-card">
-                <div class="h-left">
-                    <div class="h-left-image-container">
-                        <img class="profile_pic" src="profile_pic.jpg" alt="Profile picture of Kylan Thomson">
-                    </div>
-                </div>
-                <div class="h-right">
-                        <h1>Kylan Thomson</h1>
-                        <h2>Full Stack Developer</h2>
-
-                        <a class="h-anchor" href="Kylan_Thomson_General_Resume.pdf">
-                            <button class="h-button"><svg xmlns="http://www.w3.org/2000/svg" width="15%" height="15%" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
-                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
-                              </svg> Resume</button>
-                        </a>
-
-                        <a class="h-anchor" href="mailto:info@kylanthomson.dev?Subject=Hello">
-                            <button>Contact Me</button>
-                        </a>
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">KT</div>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            
-
-            <div class="card-header">
-                <h2>Professional Experience</h2>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Credera / January 2022 - June 2023</h3>
-                    <p>Maintained a <span class="job">Software Developer</span> role where I:
-                    </p>
-                    <ul>
-                        <li>Developed and maintained real-time data streaming pipelines for a Fortune 500 client, utilizing AWS Managed Streaming for Apache Kafka (MSK).</li>
-                        <li>Implemented robust Java-based integration tests for pipeline reliability, performance, and scalability.</li>
-                        <li>Utilized Terraform for IaC principles, efficiently provisioning and managing project infrastructure.</li>
-                        <li>Wrote complex bash scripts for process automation and optimization.</li>
-                        <li>Set up and maintained GitHub Actions for CI/CD pipelines.</li>
-                        <li>Collaborated with cross-functional teams, utilizing leadership skills and technical expertise.</li>
-                        <li>Successfully led an internal effort using React, Node JS, Contentful, and GraphQL for website localization.</li>
-                        <li>Utilized Azure Data Factory for large-scale RDBMS migration from Bullhorn to Salesforce.</li>
-                        <li>Created a business forecasting dashboard using Python and PowerBI.</li>
-                    </ul>
-                    <br>
-                    <h3>UNO / December 2021 - January 2022</h3>
-                    <p>Maintained a <span class="job">Software Developer</span> role where I:
-                    </p>
-                    <ul>
-                        <li>Developed scalable, performant applications in a start-up environment using AWS, React, Node.js, Python, and Flutter, demonstrating exceptional technical and organizational skills.</li>
-                        <li>Collaborated with stakeholders to gather and translate requirements.</li>
-                        <li>Ensured application performance and scalability by employing AWS cloud services and optimizing back-end development.</li>
-                        <li>Utilized React and Node.js to create responsive web applications.</li>
-                        <li>Utilized Flutter for cross-platform development, enhancing application performance and native look.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card-header">
-                <h2>Projects</h2>
-            </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Resume Revival</h3>
-                        <p>Developed a state-of-the-art, free-to-use web application that leverages Openai's ChatGPT LLM to transform job applications.</p>
-                        <ul>
-                            <li>Utilized Google Cloud, React, Node.js, and Python to build a platform that generates custom-built resumes and cover letters, finely tuned to match specific job descriptions.</li>
-                            <li>Implemented an AI-driven system that crafts compelling, keyword-rich applications designed to resonate with recruiters and bypass applicant tracking system (ATS) software.</li>
-                            <li>Integrated a free skill gap analysis feature that provides users with critical insights into areas they need to develop to become the perfect fit for their dream jobs.</li>
-                            <li>Committed to making the job application process more efficient and effective for job seekers everywhere, Resume Revival is more than just a document creator; it's a comprehensive career development tool.</li>
-                        </ul>
-                        <div class="project_gallery">
-                            <img id="RRimg" class="project_img" src="RR_1.jpg" alt="Resume_Revival">
-                        </div>
-                        <br>
-                        <h3>Investment Dashboard</h3>
-                        <p>Developed a comprehensive full-stack desktop application empowering users to simulate and visualize outcomes of diverse NASDAQ investment portfolios based on customizable risk and diversification preferences.</p>
-                        <ul>
-                            <li>Implemented a robust web scraping solution to aggregate NASDAQ data, compensating for the unavailability of reliable free-tier APIs.</li>
-                            <li>Leveraged Python NLTK and Tensorflow libraries to employ natural language processing techniques and summarize SEC documents.</li>
-                            <li>Utilized a versatile tech stack, including Java, JavaFX, MySQL, HTML, CSS, and Python, to deliver a seamless user experience.</li>
-                            <li>Designed an intuitive user interface, enabling easy configuration and exploration of investment scenarios.</li>
-                            <li>Implemented advanced data visualization techniques to facilitate clear and informative representations of portfolio outcomes.</li>
-                            <li>Integrated a secure login system to protect user data and enable personalized portfolio management.</li>
-                            <li>Implemented robust error handling and data validation mechanisms, ensuring data integrity and preventing system crashes.</li>
-                            <li>Optimized performance through efficient data retrieval and processing algorithms, delivering quick and accurate results.</li>
-                        </ul>
-                        <div class="project_gallery">
-                            <img id="img" class="project_img" src="SM_DB_1.jpg" alt="Stock Market Dashboard Login Image">
-                        </div>
-                        <br>
-
-                    </div>
-                </div>
-            <div class="card-header">
-                <h2>Programming Languages and Software</h2>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="skill-tags">
-                        <button class="skill-tag">Python</button>
-                        <button class="skill-tag">Django</button>
-                        <button class="skill-tag">Java</button>
-                        <button class="skill-tag">Javascript</button>
-                        <button class="skill-tag">JQuery</button>
-                        <button class="skill-tag">HTML</button>
-                        <button class="skill-tag">React JS</button>
-                        <button class="skill-tag">CSS</button>
-                        <button class="skill-tag">Node JS</button>
-                        <button class="skill-tag">Express</button>
-                        <button class="skill-tag">REST</button>
-                        <button class="skill-tag">Artificial Intelligence</button>
-                        <button class="skill-tag">MySQL</button>
-                        <button class="skill-tag">AGILE</button>
-                        <button class="skill-tag">MySQL</button>
-                        <button class="skill-tag">Github</button>
-                        <button class="skill-tag">MongoDB</button>
-                        <button class="skill-tag">Cloud Architecture Design</button>
-                        <button class="skill-tag">AWS</button>
-                        <button class="skill-tag">Google Cloud</button>
-                        <button class="skill-tag">VS Code</button>
-                        <button class="skill-tag">Photoshop</button>
-                        <button class="skill-tag">Wordpress</button>
-                        <button class="skill-tag">Linux</button>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-header">
-                <h2>Education</h2>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Virginia Commonwealth University</h3>
-                    <p>Bachelor Degree, Computer Science, Minor in Statistics | 2016-2021</p>
-                    <h3>Thomas Nelson Community College</h3>
-                    <p>Associate's Degree, Social Studies | 2013-2015</p>
-                </div>
-            </div>
-
-            <div class="card-header">
-                <h2>Courses and Certifications</h2>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3>Google Professional Data Engineer | Issued: September 1, 2022 | Expires: September 1, 2024</h3>
-                    <p>Validated proficiency in designing, building, operationalizing, securing, and monitoring data processing systems with a particular emphasis on scalability and reliability. Gained expertise in using Google Cloud technologies to both design and build data processing systems, and create machine learning models ready for production.</p>
-                    <h3>Google Cloud Associate Cloud Engineer | Issued: June 1, 2022 | Expires: June 1, 2024</h3>
-                    <p>Demonstrated ability to deploy applications, monitor operations, and manage enterprise solutions using Google Cloud Platform products and services. Acquired foundational skills for Google Cloud Platform architecture and service capabilities.</p>
-                    <h3>Udemy: The Web Developer Bootcamp 2021</h3>
-                    <p>63.5 hours of beginner to advanced web design material</p>
-                    <h3>Udemy: AWS Certified Solutions Architect Associate</h3>
-                    <p>27 hours of beginner to advanced AWS Certified Solutions Architect Associate
-                        material.</p>
-                    
-                </div>
-            </div>
-
+            <ul class="navbar-menu">
+                <li><a href="#home" class="navbar-link active">Home</a></li>
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#experience" class="navbar-link">Experience</a></li>
+                <li><a href="#projects" class="navbar-link">Projects</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Kylan Thomson</span></h1>
+                <h2 class="hero-subtitle">Full Stack Software Engineer & AI Architect</h2>
+                <p class="hero-description">Results-driven engineer with expertise in full stack web development, DevOps, CI/CD, and digital experimentation. Passionate about building applications and products that harness AI capabilities to create incredible user experiences.</p>
+                <div class="hero-buttons">
+                    <a href="Kylan_Thomson_General_Resume.pdf" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-download"></i> Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile_pic.jpg" alt="Kylan Thomson" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a Full Stack Software Engineer with hands-on experience in data science, web development, DevOps, CI/CD, and digital experimentation. I am passionate about building applications and products that effectively harness existing AI technologies.</p>
+                <p>I have extensive experience working with a wide range of generative AI technologies including text-to-speech, speech-to-text, text-to-image, image-to-text, text-to-text, text-to-JSON, and agentic multistep AI workflows. I combine my software development skills with user experience insights and knowledge of AI models and cloud architecture to build incredible products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2023 - Nov 2024</div>
+                    <div class="timeline-content">
+                        <h3>Digital Experimentation Specialist</h3>
+                        <h4>Alaska Airlines</h4>
+                        <ul>
+                            <li>Engineered Python/PySpark pipelines on Databricks to analyze A/B, multivariate, multi-armed bandit, and contextual multi-armed bandit test results.</li>
+                            <li>Implemented tagging and analysis for an experiment that focused on pricing optimization, analyzing customer behavior and revenue.</li>
+                            <li>Deployed Spark/PySpark-based data QA pipeline processing of 100k+ daily transactions, enabling automated experiment health checks.</li>
+                            <li>Developed and analyzed features to encourage eco-friendly fuel donations, experimenting with different donation percentages to maximize conversion.</li>
+                            <li>Developed a custom configuration-based solution within Optimizely to define and track granular user behaviors across website flows.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2022 - Jul 2023</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Credera</h4>
+                        <ul>
+                            <li>Developed real-time PySpark-based data streams using AWS MSK, enabling personalized discount delivery systems via Braze.</li>
+                            <li>Conducted extensive Java integration tests to evaluate pipeline data integrity, throughput, and scalability.</li>
+                            <li>Implemented Infrastructure as Code (IaC) using Terraform, achieving efficient provisioning and management of cloud infrastructure.</li>
+                            <li>Configured GitHub Actions for CI/CD pipelines, expediting development cycles and automating repetitive tasks.</li>
+                            <li>Led website localization efforts with React and Node.js to increase global engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2020 - Jan 2022</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>UNO</h4>
+                        <ul>
+                            <li>Contributed to scalable software applications using AWS, React, Node.js, Python, and Flutter in a dynamic start-up environment.</li>
+                            <li>Worked with stakeholders to interpret business needs and translate them into detailed technical documentation.</li>
+                            <li>Optimized application performance and scalability by leveraging AWS cloud solutions and Python for backend development.</li>
+                            <li>Utilized React and Node.js to engineer responsive web applications, prioritizing enhanced user experience.</li>
+                            <li>Applied Flutter for cross-platform mobile application development, ensuring uniform experience across diverse operating systems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-slider">
+                            <img src="RR_1.jpg" alt="Resume Revival" class="active">
+                            <img src="RR_2.jpg" alt="Resume Revival">
+                            <img src="RR_3.jpg" alt="Resume Revival">
+                            <img src="RR_4.jpg" alt="Resume Revival">
+                            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Resume Revival AI Platform</h3>
+                        <p>AI-powered web application that enhances job seekers' success by crafting tailored resumes optimized for Applicant Tracking Systems (ATS). Built with React for the frontend and Google Cloud Functions for AI integrations.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Google Cloud</span>
+                            <span>AI Integration</span>
+                            <span>Full Stack</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.resumerevival.xyz/about/" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <!-- <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-slider">
+                            <img src="SM_DB_1.jpg" alt="Investment Dashboard" class="active">
+                            <img src="SM_DB_2.jpg" alt="Investment Dashboard">
+                            <img src="SM_DB_3.jpg" alt="Investment Dashboard">
+                            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Investment Dashboard</h3>
+                        <p>A comprehensive full-stack application that simulates and visualizes outcomes of diverse NASDAQ investment portfolios, featuring AI-powered market analysis and personalized investment recommendations.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>MySQL</span>
+                            <span>Python</span>
+                            <span>AI Integration</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                            <!-- <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>AI Architecture & Integration</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-comment-alt"></i>
+                            <span>Text-to-Speech</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-microphone"></i>
+                            <span>Speech-to-Text</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-image"></i>
+                            <span>Text-to-Image</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Image-to-Text</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Text-to-JSON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>AI System Design</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Model Orchestration</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Agentic AI Workflows</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-user-cog"></i>
+                            <span>User-Centered AI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Digital Experimentation</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>AI Product Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Full Stack Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Terraform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Virginia Commonwealth University</h3>
+                        <p>Bachelor Degree, Computer Science, Minor in Statistics</p>
+                        <p class="education-date">2016-2021</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Thomas Nelson Community College</h3>
+                        <p>Associate's Degree, Social Studies</p>
+                        <p class="education-date">2013-2015</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Google Professional Data Engineer</h3>
+                        <p>Validated proficiency in designing, building, operationalizing, securing, and monitoring data processing systems.</p>
+                        <p class="education-date">September 2022 - September 2024</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Google Cloud Associate Cloud Engineer</h3>
+                        <p>Demonstrated ability to deploy applications, monitor operations, and manage enterprise solutions using Google Cloud Platform.</p>
+                        <p class="education-date">June 2022 - June 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Seattle, WA</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@kylanthomson.dev">info@kylanthomson.dev</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/kylanthomson/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/KylanThomson" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="mailto:info@kylanthomson.dev" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Kylan Thomson. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
-
-<!-- 
-Lighter Blue: 8da1b9
-Navy Blue: 102e4a
-Brown: 2f2504
-Lighter Brown: a9714b
-Orangish Brown: e8985e
-white: ffffff
--->

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://kylanthomson.github.io/sitemap.xml
+
+# Disallow access to any potential admin or private areas
+Disallow: /admin/
+Disallow: /private/

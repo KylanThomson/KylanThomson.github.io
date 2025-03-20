@@ -1,0 +1,20 @@
+{
+  "name": "Kylan Thomson - Full Stack Software Engineer & AI Architect",
+  "short_name": "Kylan Thomson",
+  "description": "Portfolio of Kylan Thomson, a Full Stack Software Engineer & AI Architect specializing in building applications that harness AI capabilities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#102e4a",
+  "theme_color": "#102e4a",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "lang": "en-US",
+  "dir": "ltr",
+  "orientation": "any",
+  "categories": ["portfolio", "professional", "technology", "AI architecture", "full stack", "software engineering"]
+}
